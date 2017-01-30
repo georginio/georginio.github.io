@@ -1,11 +1,11 @@
 header {
   height: 100vh;
   width: 100%;
-  color: #5e3aa9;
-  font-family: 'roboto', 'sans';
+  color: #ffffff;
+  font-family: 'Merienda', cursive, 'roboto', 'sans';
   font-weight: bold;
   background-image: url(../images/header-bg.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: 50% 50%;
   display: flex;
   justify-content: center;
@@ -13,13 +13,20 @@ header {
   flex-direction: column;
 }
 
+header .preloader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .7) url(../images/loading.svg) no-repeat 50% 50%;
+  z-index: 100;
+}
+
 header .cover {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, .7);
   position: absolute;
 }
-
 
 header .wrapper {
   text-align: center;
@@ -44,9 +51,8 @@ header .wrapper p > span.profession {
 
 header .wrapper.move p > span {
   opacity: 1;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-
 
 header ul {
   font-size: 2.4rem;
@@ -83,7 +89,6 @@ header ul li:nth-child(6) {
 header ul li:nth-child(7) {
   transform: translate(70px, -90px);
 }
-
 
 header ul.move li {
   opacity: 1;
