@@ -91,26 +91,38 @@ header ul li:nth-child(1) {
 header ul li:nth-child(2) {
   -webkit-transform: translate(40px, -90px);
           transform: translate(40px, -90px);
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 header ul li:nth-child(3) {
   -webkit-transform: translate(100px, -65px);
           transform: translate(100px, -65px);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 header ul li:nth-child(4) {
   -webkit-transform: translate(-80px, 60px);
           transform: translate(-80px, 60px);
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 header ul li:nth-child(5) {
   -webkit-transform: translate(35px, 60px);
           transform: translate(35px, 60px);
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
 }
 header ul li:nth-child(6) {
   -webkit-transform: translate(40px, 100px);
           transform: translate(40px, 100px);
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 header ul li:nth-child(7) {
   -webkit-transform: translate(70px, -90px);
           transform: translate(70px, -90px);
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 header ul.move li {
