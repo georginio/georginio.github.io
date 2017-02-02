@@ -1,5 +1,5 @@
 (function () {
-  const list = document.querySelector('header ul');
+  const list = document.querySelector('header .wrapper > ul');
   const wrapper = document.querySelector('header .wrapper');
   
 
