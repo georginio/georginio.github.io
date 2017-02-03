@@ -87,7 +87,7 @@ section.work .work-item ul.slider {
   padding: 0;
   margin: 0;
   border: none;
-  transform: translateX(-350px);
+  transition: transform 0.3s linear; 
 }
 
 section.work .work-item ul.slider li {
@@ -110,10 +110,3 @@ section.work .work-item ul.slider li:nth-child(2) {
 section.work .work-item ul.slider li:last-child {
   background-image: url(../images/adhero-3.png);
 }
-
-
-
-
-
-
-
