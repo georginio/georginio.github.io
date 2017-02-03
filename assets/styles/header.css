@@ -26,6 +26,17 @@ header .cover {
   top: 0;
 }
 
+header .side-bar {
+  display: none;
+  z-index: 1100;
+}
+
+header .side-bar-icon {
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+}
+
 /* nav bar  */
 header > .nav-bar {
   height: 80px;
@@ -200,4 +211,42 @@ header .wrapper > ul.move li {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  header > .nav-bar ul {
+    margin-right: 20px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 482px) {
+  header {
+    overflow: hidden;
+  }
+
+  header > .nav-bar > ul.nav-list {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: all 0.5s;
+    display: block;
+  }  
+  
+  header > .nav-bar.open > ul.nav-list {
+    width: 150px;
+  }
+  
+  header .side-bar {
+    display: block;
+    transition: all 0.5s;
+  }
+  
+  header nav.open .side-bar{
+    transform: translateX(-150px);
+  }
 }
