@@ -6,12 +6,21 @@
   
   sidebar.addEventListener('click', toggleSidebar);
 
+  window.addEventListener('resize', () => {
+    let width = document.body.clientWidth;
+
+    if (navBar.classList.contains('open') && width > 480)
+      navBar.classList.remove('open');
+  });
+
   window.onload = function () {
     // setTimeout(() => {
       document.querySelector("header .preloader").style.display = "none";
     // }, 2000);
     animateGreeting();
   }
+
+
 
   function animateGreeting() {
     setTimeout(() => {

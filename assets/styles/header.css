@@ -147,7 +147,6 @@ header .wrapper p > span.profession {
 
 header .wrapper.move p > span {
   opacity: 1;
-  margin-left: 10px;
 }
 
 header .wrapper > ul {
@@ -228,15 +227,28 @@ header .wrapper > ul.move li {
 
   header > .nav-bar > ul.nav-list {
     position: absolute;
-    height: 100vh;
     top: 0;
     width: 0;
-    background-color: black;
-    overflow: hidden;
-    transition: all 0.5s;
     display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 20px; 
+
+    transition: all 0.5s;
   }  
   
+  header > .nav-bar > ul.nav-list li {
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+  }
+
+  header > .nav-bar > ul.nav-list li:last-child {
+    border: none;
+  }
+
   header > .nav-bar.open > ul.nav-list {
     width: 150px;
   }
@@ -248,5 +260,17 @@ header .wrapper > ul.move li {
   
   header nav.open .side-bar{
     transform: translateX(-150px);
+  }
+
+  header .wrapper > ul {
+    font-size: 1.65rem;
+  }
+
+  header .wrapper p > span {
+    font-size: 1.25rem;
+  }
+
+  header .wrapper p {
+    text-align: center;
   }
 }
