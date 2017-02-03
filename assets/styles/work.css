@@ -2,13 +2,13 @@ section.work {
   min-height: 100vh;
   width: 100%;
   background-color: white;
+  font-family: 'Oxygen', 'sans';
 }
 
 section.work > h1 {
   margin: 30px auto;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Oxygen', 'sans';
   font-weight: bold;
   color: #262c35;
 } 
@@ -24,12 +24,14 @@ section.work > .container {
 }
 
 section.work > .container .work-item {
-  height: 480px;
-  width: 480px;
+  height: 440px;
+  width: 440px;
   background: #e3e3e3;
   margin: 5px;
 
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 section.work > .container .work-item ul {
@@ -37,4 +39,51 @@ section.work > .container .work-item ul {
   margin: 0;
   padding: 0;
 }
+
+section.work > .container .work-item .desc {
+  height: 80px;
+  width: 100%;
+  background-color: #262c35;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.work .work-item .desc span {
+  color: #e1e1e1;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section.work .work-item .desc li { 
+  box-sizing: border-box;
+  border: 5px solid #e1e1e1;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+}
+
+section.work .work-item .desc li.active {
+  border-color: #F27F7A;
+  
+} 
+
+section.work .work-item .desc li:hover {
+  cursor: pointer;
+} 
+
+section.work > .container .desc ul li img {
+  width: 440px;
+}
+
+
+
+
+
 
