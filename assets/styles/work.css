@@ -28,6 +28,7 @@ section.work > .container .work-item {
   width: 440px;
   background: #e3e3e3;
   margin: 5px;
+  overflow: hidden;
 
   display: flex;
   justify-content: space-between;
@@ -78,9 +79,38 @@ section.work .work-item .desc li:hover {
   cursor: pointer;
 } 
 
-section.work > .container .desc ul li img {
-  width: 440px;
+section.work .work-item ul.slider {
+  height: calc(100% - 80px);
+  width: calc(440px * 3);
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  transform: translateX(-350px);
 }
+
+section.work .work-item ul.slider li {
+  width: 440px;
+  height: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+section.work .work-item ul.slider li:first-child {
+  background-image: url(../images/adhero-1.png);
+}
+
+section.work .work-item ul.slider li:nth-child(2) {
+  background-image: url(../images/adhero-2.png);
+}
+section.work .work-item ul.slider li:last-child {
+  background-image: url(../images/adhero-3.png);
+}
+
 
 
 
