@@ -237,16 +237,19 @@ header .wrapper > ul.move li {
     box-sizing: border-box;
     font-size: 20px; 
 
-    transition: all 0.5s;
+    transition: all 0.3s linear;
   }  
   
   header > .nav-bar > ul.nav-list li {
-    margin-top: 10px;
+    margin: 10px auto 0;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
   }
 
   header > .nav-bar > ul.nav-list li:last-child {
     border: none;
+  }
+  header > .nav-bar ul li:hover:after {
+    width: 0;
   }
 
   header > .nav-bar.open > ul.nav-list {
@@ -255,7 +258,7 @@ header .wrapper > ul.move li {
   
   header .side-bar {
     display: block;
-    transition: all 0.5s;
+    transition: all 0.3s linear;
   }
   
   header nav.open .side-bar{
