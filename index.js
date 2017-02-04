@@ -1,3 +1,7 @@
+import './assets/styles/index.css';
+import './assets/styles/header.css';
+import './assets/styles/work.css';
+
 (function () {
   const list = document.querySelector('header .wrapper > ul');
   const wrapper = document.querySelector('header .wrapper');
