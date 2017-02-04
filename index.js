@@ -37,11 +37,14 @@
   }
 
   function tranformList () {
-    let sliderName = this.dataset.name + '-slider';
+    let siblings = [...this.parentNode.children];
+    let sliderName = `.${this.dataset.name}-slider`;
     let index = parseInt(this.dataset.index);
     let width = 440;
     let degree = -(index * width); 
 
-    document.querySelector('.' + sliderName).style.transform = 'translateX(' + degree + 'px)';
+    siblings.forEach((item) => item.classList.contains('active') && item.classList.remove('active'));
+    document.querySelector(sliderName).style.transform = `translateX(${degree}px)`;
+    this.classList.add('active');
   }
 })();

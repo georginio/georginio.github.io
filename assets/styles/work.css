@@ -1,12 +1,12 @@
 section.work {
   min-height: 100vh;
   width: 100%;
-  background-color: white;
   font-family: 'Oxygen', 'sans';
+  padding: 30px 0;
 }
 
 section.work > h1 {
-  margin: 30px auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -100,13 +100,13 @@ section.work .work-item ul.slider li {
   background-position: 50% 50%;
 }
 
-section.work .work-item ul.slider li:first-child {
+section.work .work-item ul.adhero-slider li:first-child {
   background-image: url(../images/adhero-1.png);
 }
 
-section.work .work-item ul.slider li:nth-child(2) {
+section.work .work-item ul.adhero-slider li:nth-child(2) {
   background-image: url(../images/adhero-2.png);
 }
-section.work .work-item ul.slider li:last-child {
+section.work .work-item ul.adhero-slider li:last-child {
   background-image: url(../images/adhero-3.png);
 }
