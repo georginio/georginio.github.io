@@ -28,6 +28,7 @@ section.work > .container .work-item {
   width: 440px;
   background: #e3e3e3;
   margin: 5px;
+  border-radius: 5px;
   overflow: hidden;
 
   display: flex;
@@ -109,4 +110,28 @@ section.work .work-item ul.adhero-slider li:nth-child(2) {
 }
 section.work .work-item ul.adhero-slider li:last-child {
   background-image: url(../images/adhero-3.png);
+}
+
+section.work .work-item ul.prezhero-slider li:first-child {
+  background-image: url(../images/prezhero-1.png);
+}
+
+section.work .work-item ul.prezhero-slider li:nth-child(2) {
+  background-image: url(../images/prezhero-2.png);
+}
+
+section.work .work-item ul.prezhero-slider li:last-child {
+  background-image: url(../images/prezhero-3.png);
+}
+
+section.work .work-item ul.channelhero-slider li:first-child {
+  background-image: url(../images/channelhero-1.png);
+}
+
+section.work .work-item ul.channelhero-slider li:last-child {
+  background-image: url(../images/channelhero-2.png);
+}
+
+section.work .work-item ul.sadili-slider li:first-child {
+  background-image: url(../images/sadili-1.png);
 }
