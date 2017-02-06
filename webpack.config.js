@@ -1,5 +1,4 @@
 module.exports = {
-  // define entry ponts
   entry: './index.js',
   output: {
     path: 'dist',
@@ -12,7 +11,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(noode_modules)/,
-        use: ['babel-loader'],
+        use: ['babel-loader']
       },
       {
         test: /.*\.(gif|png|jpe?g|svg)$/i,

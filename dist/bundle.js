@@ -68,7 +68,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -559,30 +562,31 @@ module.exports = __webpack_require__.p + "6b4ba53fb4beea4919ec3f331452028b.png";
 
 /***/ }),
 /* 19 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_styles_index_css__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_styles_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__assets_styles_index_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_styles_header_css__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_styles_header_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_styles_header_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_styles_work_css__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assets_styles_work_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__assets_styles_work_css__);
 
 
+__webpack_require__(3);
 
+__webpack_require__(2);
+
+__webpack_require__(4);
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 (function () {
-  const list = document.querySelector('header .wrapper > ul');
-  const wrapper = document.querySelector('header .wrapper');
-  const navBar = document.querySelector('header .nav-bar');
-  const sidebar = navBar.querySelector('.side-bar');
-  const workItem = document.querySelectorAll('.work .desc-list li');
+  var list = document.querySelector('header .wrapper > ul');
+  var wrapper = document.querySelector('header .wrapper');
+  var navBar = document.querySelector('header .nav-bar');
+  var sidebar = navBar.querySelector('.side-bar');
+  var workItem = document.querySelectorAll('.work .desc-list li');
 
   sidebar.addEventListener('click', toggleSidebar);
   window.addEventListener('resize', handleResize);
-  workItem.forEach(item => item.addEventListener('click', tranformList));
+  workItem.forEach(function (item) {
+    return item.addEventListener('click', tranformList);
+  });
 
   window.onload = function () {
     // setTimeout(() => {
@@ -592,14 +596,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   };
 
   function animateGreeting() {
-    setTimeout(() => {
+    setTimeout(function () {
       list.classList.add('move');
       wrapper.classList.add('move');
     }, 400);
   }
 
   function handleResize() {
-    let width = document.body.clientWidth;
+    var width = document.body.clientWidth;
 
     if (navBar.classList.contains('open') && width > 480) navBar.classList.remove('open');
   }
@@ -609,14 +613,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   }
 
   function tranformList() {
-    let siblings = [...this.parentNode.children];
-    let sliderName = `.${this.dataset.name}-slider`;
-    let index = parseInt(this.dataset.index);
-    let width = 440;
-    let degree = -(index * width);
+    var siblings = [].concat(_toConsumableArray(this.parentNode.children));
+    var sliderName = '.' + this.dataset.name + '-slider';
+    var index = parseInt(this.dataset.index);
+    var width = 440;
+    var degree = -(index * width);
 
-    siblings.forEach(item => item.classList.contains('active') && item.classList.remove('active'));
-    document.querySelector(sliderName).style.transform = `translateX(${degree}px)`;
+    siblings.forEach(function (item) {
+      return item.classList.contains('active') && item.classList.remove('active');
+    });
+    document.querySelector(sliderName).style.transform = 'translateX(' + degree + 'px)';
     this.classList.add('active');
   }
 })();
