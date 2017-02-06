@@ -7,6 +7,7 @@ section.work {
 
 section.work > h1 {
   margin: 0 auto;
+  padding: 28px 0;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -134,4 +135,12 @@ section.work .work-item ul.channelhero-slider li:last-child {
 
 section.work .work-item ul.sadili-slider li:first-child {
   background-image: url(../images/sadili-1.png);
+}
+
+section.work .work-item ul.sadili-slider li:nth-child(2) {
+  background-image: url(../images/sadili-2.png);
+}
+
+section.work .work-item ul.sadili-slider li:last-child {
+  background-image: url(../images/sadili-3.png);
 }
