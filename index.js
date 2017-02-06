@@ -13,14 +13,25 @@ import './assets/styles/work.css';
 
   sidebar.addEventListener('click', toggleSidebar);
   window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', addAnimations);
   workImgListItems.forEach((item) => item.addEventListener('click', tranformList));
   workItemSliders.forEach((item) => item.addEventListener('mouseover' , mousEntered));
   workItemCovers.forEach((item) => item.addEventListener('mouseleave', mouseLeft));
+ 
   window.onload = function () {
-    // setTimeout(() => {
-      document.querySelector("header .preloader").style.display = "none";
-    // }, 2000);
+    document.querySelector("header .preloader").style.display = "none";
     animateGreeting();
+  }
+
+  function addAnimations() {
+    let container = document.querySelector('section.work > .container');
+    let rectOffset = container.getBoundingClientRect();
+    let clientHeight = container.clientHeight; 
+    
+    if (rectOffset.top <= clientHeight / 1.5) {
+      container.classList.contains('animate-items') ? null : container.classList.add('animate-items');
+    }
+
   }
 
   function animateGreeting() {

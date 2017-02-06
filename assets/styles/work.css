@@ -3,6 +3,7 @@ section.work {
   width: 100%;
   font-family: 'Oxygen', 'sans';
   padding: 30px 0;
+  overflow: hidden;
 }
 
 section.work > h1 {
@@ -28,14 +29,29 @@ section.work > .container .work-item {
   height: 330px;
   width: 440px;
   background: #e3e3e3;
-  margin: 5px;
+  margin: 10px;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
 
+  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);  
+
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+
+}
+
+section.work > .container.animate-items .work-item {
+  transform: translateX(0);
+}
+
+section.work > .container.animate-items .work-item:last-child {
+  transition-delay: 0.3s;
+}
+
+section.work > .container.animate-items .work-item:nth-child(3) {
+  transition-delay: 0.3s;
 }
 
 section.work > .container .work-item ul {
@@ -54,6 +70,14 @@ section.work > .container .work-item-cover {
   display: none;
 }
 
+section.work > .container .work-item-left {
+  transform: translateX(-40%);
+}
+
+section.work > .container .work-item-right {
+  transform: translateX(40%);
+}
+
 section.work > .container .btn {
   display: inline-block;
   border-radius: 15px;
@@ -61,7 +85,7 @@ section.work > .container .btn {
   background-color: #F27F7A;
   font-size: 18px;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 50px;
   position: absolute;
   top: 50%;
   left: 50%;
