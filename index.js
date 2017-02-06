@@ -7,12 +7,15 @@ import './assets/styles/work.css';
   const wrapper = document.querySelector('header .wrapper');
   const navBar = document.querySelector('header .nav-bar');
   const sidebar = navBar.querySelector('.side-bar');
-  const workItem = document.querySelectorAll('.work .desc-list li');
+  const workImgListItems = document.querySelectorAll('.work .desc-list li');
+  const workItemSliders = document.querySelectorAll('.work .work-item .slider');
+  const workItemCovers = document.querySelectorAll('.work .work-item .work-item-cover');
 
   sidebar.addEventListener('click', toggleSidebar);
   window.addEventListener('resize', handleResize);
-  workItem.forEach((item) => item.addEventListener('click', tranformList));
-  
+  workImgListItems.forEach((item) => item.addEventListener('click', tranformList));
+  workItemSliders.forEach((item) => item.addEventListener('mouseover' , mousEntered));
+  workItemCovers.forEach((item) => item.addEventListener('mouseleave', mouseLeft));
   window.onload = function () {
     // setTimeout(() => {
       document.querySelector("header .preloader").style.display = "none";
@@ -46,7 +49,17 @@ import './assets/styles/work.css';
     let degree = -(index * width); 
 
     siblings.forEach((item) => item.classList.contains('active') && item.classList.remove('active'));
-    document.querySelector(sliderName).style.transform = `translateX(${degree}px)`;
+    document.querySelector(sliderName).style['transform'] = `translateX(${degree}px)`;
+    document.querySelector(sliderName).style['-webkit-transform'] = `translateX(${degree}px)`;
     this.classList.add('active');
   }
+
+  function mousEntered () {
+    this.parentNode.querySelector('.work-item-cover').style.display = 'block';
+  }
+
+  function mouseLeft () {
+    this.style.display = 'none';
+  }
+
 })();
