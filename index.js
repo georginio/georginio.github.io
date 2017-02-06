@@ -20,8 +20,6 @@ import './assets/styles/work.css';
     animateGreeting();
   }
 
-
-
   function animateGreeting() {
     setTimeout(() => {
       list.classList.add('move');
