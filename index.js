@@ -1,6 +1,7 @@
 import './assets/styles/index.css';
 import './assets/styles/header.css';
 import './assets/styles/work.css';
+import './assets/styles/about.css';
 
 (function () {
   const list = document.querySelector('header .wrapper > ul');
@@ -77,14 +78,22 @@ import './assets/styles/work.css';
 
   function slowScroll() {
     let to = document.getElementById(this.dataset.to).getBoundingClientRect().top;
-    moveScroll(to);
+    moveScroll(to, this.dataset.to);
   }
 
-  function moveScroll (to) {
-    if(window.scrollY < to) {
+  function moveScroll (to, title) {
+    let size;
+
+    switch(title) {
+      case 'work': size = 7; break;
+      case 'about': size = 11; break;
+      case 'contact': size = 15; break;
+    }
+
+    if (window.scrollY < to) {
       setTimeout(function() {
-        window.scrollTo(0,window.scrollY + 7);
-          moveScroll(to);
+        window.scrollTo(0, window.scrollY + size);
+          moveScroll(to, title);
       }, 5);
     }
   }
