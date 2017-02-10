@@ -7,6 +7,7 @@ import './assets/styles/work.css';
   const wrapper = document.querySelector('header .wrapper');
   const navBar = document.querySelector('header .nav-bar');
   const sidebar = navBar.querySelector('.side-bar');
+  const navList = navBar.querySelectorAll('.nav-list > li');
   const workImgListItems = document.querySelectorAll('.work .desc-list li');
   const workItemSliders = document.querySelectorAll('.work .work-item .slider');
   const workItemCovers = document.querySelectorAll('.work .work-item .work-item-cover');
@@ -14,6 +15,7 @@ import './assets/styles/work.css';
   sidebar.addEventListener('click', toggleSidebar);
   window.addEventListener('resize', handleResize);
   window.addEventListener('scroll', addAnimations);
+  navList.forEach((item) => item.addEventListener('click', slowScroll));
   workImgListItems.forEach((item) => item.addEventListener('click', tranformList));
   workItemSliders.forEach((item) => item.addEventListener('mouseover' , mousEntered));
   workItemCovers.forEach((item) => item.addEventListener('mouseleave', mouseLeft));
@@ -71,6 +73,20 @@ import './assets/styles/work.css';
 
   function mouseLeft () {
     this.style.display = 'none';
+  }
+
+  function slowScroll() {
+    let to = document.getElementById(this.dataset.to).getBoundingClientRect().top;
+    moveScroll(to);
+  }
+
+  function moveScroll (to) {
+    if(window.scrollY < to) {
+      setTimeout(function() {
+        window.scrollTo(0,window.scrollY + 7);
+          moveScroll(to);
+      }, 5);
+    }
   }
 
 })();

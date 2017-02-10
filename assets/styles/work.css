@@ -34,7 +34,7 @@ section.work > .container .work-item {
   overflow: hidden;
   position: relative;
 
-  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);  
+  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84), opacity 1.0s;  
 
   display: flex;
   flex-direction: column;
@@ -44,6 +44,7 @@ section.work > .container .work-item {
 
 section.work > .container.animate-items .work-item {
   transform: translateX(0);
+  opacity: 1;
 }
 
 section.work > .container.animate-items .work-item:last-child {
@@ -72,10 +73,12 @@ section.work > .container .work-item-cover {
 
 section.work > .container .work-item-left {
   transform: translateX(-40%);
+  opacity: 0.6;
 }
 
 section.work > .container .work-item-right {
   transform: translateX(40%);
+  opacity: 0.6;
 }
 
 section.work > .container .btn {
