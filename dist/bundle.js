@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/dist/";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -487,7 +487,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "#about {\n  min-height: 100vh;\n  width: 100%;\n  background-color: mediumpurple;\n}", ""]);
+exports.push([module.i, "#about {\n  width: 100%;\n  font-family: 'Oxygen', 'sans';\n  padding: 30px 0;\n  overflow: hidden;\n  background-color: #262c35;\n  color: white;\n  box-sizing: border-box;\n  position: relative;\n}\n\n#about h1 {\n  margin: 0 auto;\n  padding: 28px 0;\n  text-align: center;\n  font-size: 2.7rem;\n  font-weight: bold;\n}\n\n#about .wrapper {\n  max-width: 992px;\n  margin: 20px auto;\n} \n\n#about .wrapper .desc {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n#about .wrapper .img-circle {\n  height: 135px;\n  width: 135px;\n  background-color: linen;\n  border-radius: 50%;\n  position: relative;\n}\n\n#about .wrapper .img-container {\n  height: 115px;\n  width: 115px;\n  border-radius: 50%;\n  background-image: url(" + __webpack_require__(17) + ");  \n  background-position: 50% 61%;\n  background-size: cover;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n\n\n#about .wrapper .desc p {\n  max-width: 630px;\n  letter-spacing: 1px;\n  line-height: 24px;\n  text-align: center;\n}\n\n#about .wrapper .desc .rock-horns {\n  display: inline-block;\n  background-image: url(" + __webpack_require__(21) + ");\n  background-size: cover;\n  background-position: 50% 50%;\n  height: 20px; \n  width: 24px;\n}\n", ""]);
 
 // exports
 
@@ -529,7 +529,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "section.work {\n  min-height: 100vh;\n  width: 100%;\n  font-family: 'Oxygen', 'sans';\n  padding: 30px 0;\n  overflow: hidden;\n}\n\nsection.work > h1 {\n  margin: 0 auto;\n  padding: 28px 0;\n  text-align: center;\n  font-size: 2.7rem;\n  font-weight: bold;\n  color: #262c35;\n} \n\nsection.work > .container {\n  max-width: 992px;\n  margin: 20px auto;\n\n  display: -webkit-box;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\nsection.work > .container .work-item {\n  height: 330px;\n  width: 440px;\n  background: #e3e3e3;\n  margin: 10px;\n  border-radius: 5px;\n  overflow: hidden;\n  position: relative;\n\n  -webkit-transition: opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);\n\n  transition: opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);\n\n  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84), opacity 1.0s;\n\n  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84), opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);  \n\n  display: -webkit-box;  \n\n  display: -ms-flexbox;  \n\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n\n}\n\nsection.work > .container.animate-items .work-item {\n  -webkit-transform: translateX(0);\n          transform: translateX(0);\n  opacity: 1;\n}\n\nsection.work > .container.animate-items .work-item:last-child {\n  -webkit-transition-delay: 0.3s;\n          transition-delay: 0.3s;\n}\n\nsection.work > .container.animate-items .work-item:nth-child(3) {\n  -webkit-transition-delay: 0.3s;\n          transition-delay: 0.3s;\n}\n\nsection.work > .container .work-item ul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\nsection.work > .container .work-item-cover {\n  height: calc(100% - 70px);\n  width: 100%;\n  background-color: hsla(220,17%,20%,0.75);\n  position: absolute;\n  left: 0;\n  top:0;\n  display: none;\n}\n\nsection.work > .container .work-item-left {\n  -webkit-transform: translateX(-40%);\n          transform: translateX(-40%);\n  opacity: 0.6;\n}\n\nsection.work > .container .work-item-right {\n  -webkit-transform: translateX(40%);\n          transform: translateX(40%);\n  opacity: 0.6;\n}\n\nsection.work > .container .btn {\n  display: inline-block;\n  border-radius: 15px;\n  text-decoration: none;\n  background-color: #F27F7A;\n  font-size: 18px;\n  color: white;\n  padding: 15px 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  text-transform: capitalize;\n}\n\nsection.work > .container .work-item .desc {\n  height: 70px;\n  width: 100%;\n  background-color: #262c35;\n  color: white;\n  padding: 0 20px;\n  box-sizing: border-box;\n\n  display: -webkit-box;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\nsection.work .work-item .desc span {\n  color: #e1e1e1;\n  text-transform: capitalize;\n  font-size: 1rem;\n  font-weight: bold;\n}\n\nsection.work .work-item .desc li { \n  box-sizing: border-box;\n  border: 5px solid #e1e1e1;\n  border-radius: 50%;\n  padding: 5px;\n  display: inline-block;\n}\n\nsection.work .work-item .desc li.active {\n  border-color: #F27F7A;\n  \n} \n\nsection.work .work-item .desc li:hover {\n  cursor: pointer;\n} \n\nsection.work .work-item ul.slider {\n  height: calc(100% - 70px);\n  width: calc(440px * 3);\n  overflow: hidden;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  margin: 0;\n  border: none;\n  -webkit-transition: -webkit-transform 0.3s linear;\n  transition: -webkit-transform 0.3s linear;\n  transition: transform 0.3s linear;\n  transition: transform 0.3s linear, -webkit-transform 0.3s linear; \n}\n\nsection.work .work-item ul.slider li {\n  width: 440px;\n  height: 100%;\n  display: inline-block;\n  padding: 0;\n  margin: 0;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\nsection.work .work-item ul.adhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(10) + ");\n}\n\nsection.work .work-item ul.adhero-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(11) + ");\n}\nsection.work .work-item ul.adhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(12) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(17) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(18) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(19) + ");\n}\n\nsection.work .work-item ul.channelhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(13) + ");\n}\n\nsection.work .work-item ul.channelhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(14) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:first-child {\n  background-image: url(" + __webpack_require__(20) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(21) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:last-child {\n  background-image: url(" + __webpack_require__(22) + ");\n}", ""]);
+exports.push([module.i, "section.work {\n  min-height: 100vh;\n  width: 100%;\n  font-family: 'Oxygen', 'sans';\n  padding: 30px 0;\n  overflow: hidden;\n}\n\nsection.work > h1 {\n  margin: 0 auto;\n  padding: 28px 0;\n  text-align: center;\n  font-size: 2.7rem;\n  font-weight: bold;\n  color: #262c35;\n} \n\nsection.work > .container {\n  max-width: 992px;\n  margin: 20px auto;\n\n  display: -webkit-box;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\nsection.work > .container .work-item {\n  height: 330px;\n  width: 440px;\n  background: #e3e3e3;\n  margin: 10px;\n  border-radius: 5px;\n  overflow: hidden;\n  position: relative;\n\n  -webkit-transition: opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);\n\n  transition: opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);\n\n  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84), opacity 1.0s;\n\n  transition: transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84), opacity 1.0s, -webkit-transform 1.0s cubic-bezier(0.13, 0.47, 0.35, 0.84);  \n\n  display: -webkit-box;  \n\n  display: -ms-flexbox;  \n\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n\n}\n\nsection.work > .container.animate-items .work-item {\n  -webkit-transform: translateX(0);\n          transform: translateX(0);\n  opacity: 1;\n}\n\nsection.work > .container.animate-items .work-item:last-child {\n  -webkit-transition-delay: 0.3s;\n          transition-delay: 0.3s;\n}\n\nsection.work > .container.animate-items .work-item:nth-child(3) {\n  -webkit-transition-delay: 0.3s;\n          transition-delay: 0.3s;\n}\n\nsection.work > .container .work-item ul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\nsection.work > .container .work-item-cover {\n  height: calc(100% - 70px);\n  width: 100%;\n  background-color: hsla(220,17%,20%,0.75);\n  position: absolute;\n  left: 0;\n  top:0;\n  display: none;\n}\n\nsection.work > .container .work-item-left {\n  -webkit-transform: translateX(-40%);\n          transform: translateX(-40%);\n  opacity: 0.6;\n}\n\nsection.work > .container .work-item-right {\n  -webkit-transform: translateX(40%);\n          transform: translateX(40%);\n  opacity: 0.6;\n}\n\nsection.work > .container .btn {\n  display: inline-block;\n  border-radius: 15px;\n  text-decoration: none;\n  background-color: #F27F7A;\n  font-size: 18px;\n  color: white;\n  padding: 15px 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  text-transform: capitalize;\n}\n\nsection.work > .container .work-item .desc {\n  height: 70px;\n  width: 100%;\n  background-color: #262c35;\n  color: white;\n  padding: 0 20px;\n  box-sizing: border-box;\n\n  display: -webkit-box;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\nsection.work .work-item .desc span {\n  color: #e1e1e1;\n  text-transform: capitalize;\n  font-size: 1rem;\n  font-weight: bold;\n}\n\nsection.work .work-item .desc li { \n  box-sizing: border-box;\n  border: 5px solid #e1e1e1;\n  border-radius: 50%;\n  padding: 5px;\n  display: inline-block;\n}\n\nsection.work .work-item .desc li.active {\n  border-color: #F27F7A;\n  \n} \n\nsection.work .work-item .desc li:hover {\n  cursor: pointer;\n} \n\nsection.work .work-item ul.slider {\n  height: calc(100% - 70px);\n  width: calc(440px * 3);\n  overflow: hidden;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 0;\n  margin: 0;\n  border: none;\n  -webkit-transition: -webkit-transform 0.3s linear;\n  transition: -webkit-transform 0.3s linear;\n  transition: transform 0.3s linear;\n  transition: transform 0.3s linear, -webkit-transform 0.3s linear; \n}\n\nsection.work .work-item ul.slider li {\n  width: 440px;\n  height: 100%;\n  display: inline-block;\n  padding: 0;\n  margin: 0;\n  background-size: cover;\n  background-position: 50% 50%;\n}\n\nsection.work .work-item ul.adhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(10) + ");\n}\n\nsection.work .work-item ul.adhero-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(11) + ");\n}\nsection.work .work-item ul.adhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(12) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(18) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(19) + ");\n}\n\nsection.work .work-item ul.prezhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(20) + ");\n}\n\nsection.work .work-item ul.channelhero-slider li:first-child {\n  background-image: url(" + __webpack_require__(13) + ");\n}\n\nsection.work .work-item ul.channelhero-slider li:last-child {\n  background-image: url(" + __webpack_require__(14) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:first-child {\n  background-image: url(" + __webpack_require__(22) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:nth-child(2) {\n  background-image: url(" + __webpack_require__(23) + ");\n}\n\nsection.work .work-item ul.sadili-slider li:last-child {\n  background-image: url(" + __webpack_require__(24) + ");\n}", ""]);
 
 // exports
 
@@ -580,40 +580,52 @@ module.exports = __webpack_require__.p + "0e05490d28bcb42e7bc41e20c6b3c76c.svg";
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "91a9fcdb0f9358d97b4265e2364227ea.png";
+module.exports = __webpack_require__.p + "dd5725e75cf5916ad516b3cbe17b57e1.jpg";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a3d83252c964ae32422bc2b240d79d83.png";
+module.exports = __webpack_require__.p + "91a9fcdb0f9358d97b4265e2364227ea.png";
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "392f02640f39a929351068794faf5e34.png";
+module.exports = __webpack_require__.p + "a3d83252c964ae32422bc2b240d79d83.png";
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "6b4ba53fb4beea4919ec3f331452028b.png";
+module.exports = __webpack_require__.p + "392f02640f39a929351068794faf5e34.png";
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1a0f291b63b396c690a76f85da349c98.png";
+module.exports = __webpack_require__.p + "9ebcbe9b47715380281f31ffa7e5f60f.png";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c83a2f1621f9b3a5b10d23428d2751a0.png";
+module.exports = __webpack_require__.p + "6b4ba53fb4beea4919ec3f331452028b.png";
 
 /***/ }),
 /* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1a0f291b63b396c690a76f85da349c98.png";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c83a2f1621f9b3a5b10d23428d2751a0.png";
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -726,8 +738,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       case 'contact':
         size = 15;break;
     }
-
-    if (window.scrollY < to) {
+    console.log('buuum', document.body.scrollHeight);
+    if (window.scrollY <= to) {
       setTimeout(function () {
         window.scrollTo(0, window.scrollY + size);
         moveScroll(to, title);

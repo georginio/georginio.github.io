@@ -1,5 +1,68 @@
 #about {
-  min-height: 100vh;
   width: 100%;
-  background-color: mediumpurple;
+  font-family: 'Oxygen', 'sans';
+  padding: 30px 0;
+  overflow: hidden;
+  background-color: #262c35;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#about h1 {
+  margin: 0 auto;
+  padding: 28px 0;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+#about .wrapper {
+  max-width: 992px;
+  margin: 20px auto;
+} 
+
+#about .wrapper .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .wrapper .img-circle {
+  height: 135px;
+  width: 135px;
+  background-color: linen;
+  border-radius: 50%;
+  position: relative;
+}
+
+#about .wrapper .img-container {
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  background-image: url(../images/me.jpg);  
+  background-position: 50% 61%;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#about .wrapper .desc p {
+  max-width: 630px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#about .wrapper .desc .rock-horns {
+  display: inline-block;
+  background-image: url(../images/rock.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 20px; 
+  width: 24px;
 }
