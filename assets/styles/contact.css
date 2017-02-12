@@ -1,0 +1,71 @@
+#contact {
+  width: 100%;
+  padding: 30px 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  color: #262c35;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contact ul li {
+  height: 55px;
+  width: 55px;
+  border: 8px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#contact ul li:hover {
+  cursor: pointer;
+  border-bottom-color: #262c35;
+}
+
+#contact ul li.mail {
+  background-image: url(../images/mail.svg);
+}
+
+#contact ul li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+}
+
+#contact ul li.github {
+  background-image: url(../images/github.svg);
+}
+
+#contact ul li.stackoverflow {
+  background-image: url(../images/stackoverflow.svg);
+  background-size: 250%;
+  background-position: 50% 44%;
+}
+
+#contact ul li.upwork {
+  background-image: url(../images/upwork.svg);
+} 
+
+#contact ul li i {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

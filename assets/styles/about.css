@@ -30,16 +30,16 @@
 }
 
 #about .wrapper .img-circle {
-  height: 135px;
-  width: 135px;
+  height: 138px;
+  width: 138px;
   background-color: linen;
   border-radius: 50%;
   position: relative;
 }
 
 #about .wrapper .img-container {
-  height: 115px;
-  width: 115px;
+  height: 124px;
+  width: 124px;
   border-radius: 50%;
   background-image: url(../images/me.jpg);  
   background-position: 50% 61%;

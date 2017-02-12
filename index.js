@@ -2,6 +2,7 @@ import './assets/styles/index.css';
 import './assets/styles/header.css';
 import './assets/styles/work.css';
 import './assets/styles/about.css';
+import './assets/styles/contact.css';
 
 (function () {
   const list = document.querySelector('header .wrapper > ul');
