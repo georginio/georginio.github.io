@@ -78,23 +78,28 @@ import './assets/styles/contact.css';
   }
 
   function slowScroll() {
-    let to = document.getElementById(this.dataset.to).getBoundingClientRect().top;
-    moveScroll(to, this.dataset.to);
-  }
-
-  function moveScroll (to, title) {
+    let scrollId = this.dataset.to;
+    let to = document.getElementById(scrollId).getBoundingClientRect().top;
     let size;
 
-    switch(title) {
+    // close sidebar if it's open
+    if (navBar.classList.contains('open'))
+      navBar.classList.remove('open');
+
+    switch(scrollId) {
       case 'work': size = 7; break;
-      case 'about': size = 11; break;
-      case 'contact': size = 15; break;
+      case 'about': size = 11, to = to - 15; break;
+      case 'contact': size = 15; to = document.body.scrollHeight - document.body.clientHeight - 5; break;
     }
 
+    moveScroll(to, size);
+  }
+
+  function moveScroll (to, size) {
     if (window.scrollY <= to ) {
       setTimeout(function() {
         window.scrollTo(0, window.scrollY + size);
-          moveScroll(to, title);
+          moveScroll(to, size);
       }, 5);
     }
   }
