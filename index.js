@@ -89,7 +89,7 @@ import './assets/styles/about.css';
       case 'about': size = 11; break;
       case 'contact': size = 15; break;
     }
-    console.log('buuum', document.body.scrollHeight);
+
     if (window.scrollY <= to ) {
       setTimeout(function() {
         window.scrollTo(0, window.scrollY + size);

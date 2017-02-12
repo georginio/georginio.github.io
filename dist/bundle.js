@@ -738,7 +738,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       case 'contact':
         size = 15;break;
     }
-    console.log('buuum', document.body.scrollHeight);
+
     if (window.scrollY <= to) {
       setTimeout(function () {
         window.scrollTo(0, window.scrollY + size);
