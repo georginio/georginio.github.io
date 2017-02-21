@@ -81,15 +81,21 @@ import './assets/styles/contact.css';
     let scrollId = this.dataset.to;
     let to = document.getElementById(scrollId).getBoundingClientRect().top;
     let size;
-
+    let bottom = document.body.scrollHeight - document.body.clientHeight - 5;
     // close sidebar if it's open
     if (navBar.classList.contains('open'))
       navBar.classList.remove('open');
 
     switch(scrollId) {
       case 'work': size = 7; break;
-      case 'about': size = 11, to = to - 15; break;
-      case 'contact': size = 15; to = document.body.scrollHeight - document.body.clientHeight - 5; break;
+      case 'about': 
+        size = 11; 
+        to = to > bottom ? bottom: to; 
+        break;
+      case 'contact': 
+        size = 11; 
+        to = bottom; 
+        break;
     }
 
     moveScroll(to, size);

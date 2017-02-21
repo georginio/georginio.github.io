@@ -235,8 +235,9 @@ header .wrapper > ul.move li {
     background-color: rgb(10, 13, 31); 
     padding-top: 20px;
     box-sizing: border-box;
-    font-size: 20px; 
-
+    font-size: 16px; 
+    letter-spacing: 0.5px;
+    
     transition: all 0.3s linear;
   }  
   
