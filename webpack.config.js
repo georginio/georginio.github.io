@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'index.js'),
@@ -7,7 +8,11 @@ module.exports = {
     filename: 'bundle.js',  
     publicPath: "/dist/",
   },
-
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "styles.css",
+    })
+  ],
   module: {
     rules: [
       {
@@ -26,17 +31,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', { 
-          loader: 'postcss-loader',
-          options: {
-            plugins: function () {
-              return [
-                require('autoprefixer')
-              ];
-            }
-          }
-        }],
-      },
+        use: [
+          'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+          'postcss-loader'
+        ]
+      }
     ]
   }
 }
