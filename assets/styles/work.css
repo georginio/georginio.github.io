@@ -196,7 +196,27 @@ section.work .work-item ul.sadili-slider li:nth-child(2) {
 section.work .work-item ul.sadili-slider li:last-child {
   background-image: url(../images/sadili-3.png);
 }
-		
+	
+section.work .work-item ul.paradise-slider li:first-child {
+  background-image: url(../images/paradise-1.png);
+}
+
+section.work .work-item ul.paradise-slider li:nth-child(2) {
+  background-image: url(../images/paradise-2.png);
+}
+
+section.work .work-item ul.paradise-slider li:last-child {
+  background-image: url(../images/paradise-3.png);
+}
+
+section.work .work-item ul.cardtocard-slider li:first-child {
+  background-image: url(../images/cardtocard-1.png);
+}
+
+section.work .work-item ul.cardtocard-slider li:nth-child(2) {
+  background-image: url(../images/cardtocard-2.png);
+}
+
 /* small devices */		
 @media only screen and (max-width : 482px) {		
   section.work > .container .btn {		

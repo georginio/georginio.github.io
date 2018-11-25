@@ -42,7 +42,7 @@ import './assets/styles/contact.css';
     setTimeout(() => {
       list.classList.add('move');
       wrapper.classList.add('move');
-    }, 1400);
+    }, 400);
   }
 
   function handleResize() {
