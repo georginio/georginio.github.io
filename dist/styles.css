@@ -336,6 +336,29 @@ section.work > .container .work-item-cover {
   left: 0;
   top:0;
   display: none;
+  padding: 20px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+section.work > .container .work-item-cover .position {
+  margin-bottom: 10px;
+}
+
+section.work > .container .work-item-cover label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+section.work > .container .work-item-cover a.tag {
+  background-color: #E0E0E0;
+  color: #222;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: .3rem;
+  display: inline-block;
+  margin: 2px 0;
+  text-decoration: none;
 }
 
 section.work > .container .work-item-left {
@@ -352,18 +375,17 @@ section.work > .container .work-item-right {
 
 section.work > .container .btn {
   display: inline-block;
-  border-radius: 15px;
+  border-radius: 5px;
   text-decoration: none;
   background-color: #F27F7A;
   font-size: 18px;
   color: white;
-  padding: 15px 50px;
+  padding: 5px 15px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 10px;
+  bottom: 10px;
   text-transform: capitalize;
+  font-size: 14px;
 }
 
 section.work > .container .work-item .desc {
