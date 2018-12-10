@@ -30,13 +30,14 @@ header .cover {
 header .side-bar {
   display: none;
   z-index: 1100;
+  position: relative;
 }
 
-header .side-bar-icon {
+/* header .side-bar-icon {
   font-size: 30px;
   color: white;
   margin-right: 10px;
-}
+} */
 
 /* nav bar  */
 
@@ -225,7 +226,6 @@ header .wrapper > ul.move li {
   
   header > .nav-bar > ul.nav-list li {
     margin: 10px auto 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .4);
   }
 
   header > .nav-bar > ul.nav-list li:last-child {
@@ -247,6 +247,60 @@ header .wrapper > ul.move li {
   header nav.open .side-bar{
     -webkit-transform: translateX(-150px);
             transform: translateX(-150px);
+  }
+
+  header nav .side-bar > input {
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    position: absolute;
+    z-index: 12312312;
+  }
+
+  header nav .side-bar > span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    position: relative;
+    
+    transition: opacity 0.25s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.25s ease;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.25s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  header nav .side-bar > span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+
+  header nav .side-bar > span:last-child {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+
+  header nav .side-bar input:checked ~ span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  header nav .side-bar input:checked ~ span:first-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  header nav .side-bar input:checked ~ span:nth-child(2) {
+    opacity: 0;
+  }
+
+  header nav .side-bar input:checked ~ span:last-child {
+    -webkit-transform: rotate(-45deg) translate(4px, 4px);
+            transform: rotate(-45deg) translate(4px, 4px);
   }
 
   header .wrapper > ul {
